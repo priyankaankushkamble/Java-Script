@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>InputControlDOM</title>
+	<script type='text/javascript'>
+	function createTag()
+	{
+			let myTextBox=document.createElement("input");
+			myTextBox.setAttribute("type","text");
+			myTextBox.setAttribute("name","name");
+			myTextBox.setAttribute("value","100");
+			let container=document.getElementById("c");
+			container.appendChild(myTextBox);
+	   }
+   </script>
+    <style>
+	    input{
+		  width:400px;
+		  height:40px;
+		}
+	</style>
+ </head>
+ <body id="b">
+    &nbsp;&nbsp;<input type='button' name='s' value='Print Table' onclick='createTag()' /> 
+   <br><br>
+   <div id="c">
+   </div>
+ </body>
+</html>
+
