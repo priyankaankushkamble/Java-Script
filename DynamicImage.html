@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>DynamicImage</title>
+	<style>
+	.main{
+		height:500px;
+		width:500px;
+		background-color:gray;
+		margin:auto;
+	}
+	#image{
+		height:100%;
+		width:100%;
+		margin:auto;
+	}
+	.button{
+		margin-left:500px;
+		
+	}
+	</style>
+</head>
+	<body>
+	
+	<div class="main">
+	<img id="image" src="" alt="image not found">
+
+	</div>
+	<button class="button"onclick="showimage()">Show Image</button>
+	<button onclick="hideimage()">Hide Image</button>
+	
+	
+	<script>
+	function showimage(){
+	
+	
+	let a=document.getElementById("image");
+	a.src="Image_2.JFIF";
+	}
+	
+	function hideimage(){
+	
+	
+	let a=document.getElementById("image");
+	a.src=" ";
+	}
+	
+	</script>
+	</body>
+</html>
