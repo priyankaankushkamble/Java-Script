@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum Using Rest Operator</title>
+    <script type="text/javascript">
+        function sum(...x)
+		{
+            let total=0;
+            for(let i of x) 
+			{
+                total+=i;
+            }
+            return total;
+        }
+
+        function showSum() 
+		{
+            let result=sum(10,20,30,40,50); 
+            alert("The sum is: "+result);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Calculate Sum" onclick="showSum()"/>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Button Web Page</title>
+<style>
+input{
+	margin:40px;
+	height:40px;
+	background-color:green;
+
+}
+button{
+	background-color:yellow;
+	height:40px;
+	width:80px;
+}
+
+</style>
+</head>
+
+	<body>
+	<button onclick="addTextBox()">TextButton</button>
+	<div id="container">
+	</div>
+	<script>
+	function addTextBox()
+	{
+		var input=document.createElement("input");
+		input.type='text';
+		var container=document.getElementById("container");
+		container.appendChild(input);
+	}
+	</script>
+	</body>
+</html>
