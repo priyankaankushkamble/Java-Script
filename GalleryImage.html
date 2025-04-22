@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>GalleryImage</title>
+	<style>
+		.container{
+			width:100%;
+			height:60vh;
+		}
+		.main{
+			margin-top:4px;
+			width:100%;
+			height:70%;
+			display:flex;
+			justify-content:space-around;
+		}
+		.image{
+			height:100%;
+			width:19%;
+		}
+		#btn{
+		margin-left:600px;
+		background-color:gray;
+		height:50px;
+		width:100px;
+		
+		}
+		
+	</style>
+</head>
+
+		<body>
+			<div class="container">
+			<div class="main">
+				<img src=""id="flower1"class="image">
+				<img src=""id="flower2"class="image">
+				<img src=""id="flower3"class="image">
+				<img src=""id="flower4"class="image">
+				<img src=""id="flower5"class="image">
+				
+			</div>
+			<div class="main">
+				<img src=""id="flower6"class="image">
+				<img src=""id="flower7"class="image">
+				<img src=""id="flower8"class="image">
+				<img src=""id="flower9"class="image">
+				<img src=""id="flower10"class="image">
+			</div>
+			<div class="button">
+				<button onclick="show()"id="btn">Click Here</button>
+			</div>
+			
+			</div>
+			<script>
+			let count=1;
+			function show(){
+				if(count==1)
+				{
+				let img1=document.getElementById("flower1");
+				img1.src="Flower_1.JPG";
+				count++;
+				}
+				else if(count==2)
+				{
+					let img1=document.getElementById("flower2");
+				img1.src="flower_2.JPG";
+				count++;
+				}
+				else if(count==3)
+				{
+					let img1=document.getElementById("flower3");
+				img1.src="flower_3.JPG";
+				count++;
+				}
+				else if(count==4)
+				{
+					let img1=document.getElementById("flower4");
+				img1.src="flower_4.JPG";
+				count++;
+				}
+				else if(count==5)
+				{
+					let img1=document.getElementById("flower5");
+				img1.src="flower_5.JPG";
+				count++;
+				}
+				else if(count==6)
+				{
+					let img1=document.getElementById("flower6");
+				img1.src="flower_6.JPG";
+				count++;
+				}
+				else if(count==7)
+				{
+					let img1=document.getElementById("flower7");
+				img1.src="flower_7.JPG";
+				count++;
+				}else if(count==8)
+				{
+					let img1=document.getElementById("flower8");
+				img1.src="flower_8.JPG";
+				count++;
+				}else if(count==9)
+				{
+					let img1=document.getElementById("flower9");
+				img1.src="flower_9.JPG";
+				count++;
+				}
+				else if(count==10)
+				{
+					let img1=document.getElementById("flower10");
+				img1.src="flower_1.JPG";
+				count++;
+				}
+				else{
+					alert("Gallery is full");
+				}
+				
+			}
+			</script>
+		</body>
+</html>
